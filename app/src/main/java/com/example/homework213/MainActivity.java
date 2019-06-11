@@ -58,20 +58,6 @@ public class MainActivity extends AppCompatActivity {
         mStartDateCalendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
-
-            }
-        });
-
-        mEndtDateCalendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
-            @Override
-            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
-
-            }
-        });
-
-        mStartDateCalendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
-            @Override
-            public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
                 mStartDateTxt = i+"-"+i1+"-"+i2;
                 mChooseStartDate.setText("Дата-время старта задачи: " + mStartDateTxt);
                 GregorianCalendar gregorianCalendar = new GregorianCalendar();
